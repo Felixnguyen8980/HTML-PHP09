@@ -1,0 +1,20 @@
+@font-face{
+	font-family: fontNice;
+	src: url(font/segoepr.ttf);
+}
+.body{
+	font-size: 90%;
+	
+}
+#header{
+	height: 100px;
+	font-family: fontNice;
+	 text-shadow: 2px 2px #ff0000;
+}
+#main{
+	font-size: 20px;
+	height: 300px;
+}
+#footer{
+	height: 100px;
+}

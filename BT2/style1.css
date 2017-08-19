@@ -1,0 +1,29 @@
+body{
+	height: 800px;
+}
+div{
+	font-size: 20px;
+	color: white;
+	width: 25%;
+	float: left;
+	text-align: center;
+	height: 100%;
+
+}
+#tweets{
+	background-color: #a0ddce;
+
+	
+}
+#replies{
+	background-color: #f7cf2f;
+	
+}
+#search{
+	background-color: #6a7a8a;
+	
+}
+#messages{
+	background-color: #52abe5;
+
+}
