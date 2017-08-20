@@ -1,0 +1,31 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	margin: 20px auto;
+	width: 500px;
+}
+div{
+	height: 100px;
+}
+.content{
+	
+}
+#main{
+	width: 69%;
+	float: left;
+}
+#note{
+	width: 30%;
+	float: right ;
+	border: 3px solid grey;
+	text-align: center;
+	box-sizing: border-box;
+}
+#note p{
+	padding-top: 20px;
+}
+#contact{
+	padding-top: 20px;
+}
