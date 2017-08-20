@@ -91,6 +91,10 @@ body{
        
     align-items:center;
 }
+.footer p{
+	padding-top: 1%;
+	font-size: 80%;
+}
 a{
 	color: green;
 	font-size: 19px;
