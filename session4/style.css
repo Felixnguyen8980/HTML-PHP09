@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	width: 1200px
+}
+li{	
+	width: 65px;
+	margin: 50px;
+	float: left;
+	height: 32px;
+	box-sizing: border-box;
+}
+.home{
+ list-style-image: url('home.ico');
+
+}
+a:visited{
+	color: purple;
+}
+.news{
+	list-style-image: url('news.ico');
+}
+.music{
+	list-style-image: url('music.ico');
+}
+.volleyball{
+	list-style-type: square;
+}
+.football{
+	list-style-type: circle;
+}
+.contact{
+	list-style-type: none;
+}

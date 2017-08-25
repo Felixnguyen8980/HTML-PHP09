@@ -1,0 +1,70 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+div{
+	margin: 20px 0 30px;
+}
+body{
+	font-family: sans-serif;
+	color: #333;
+}
+
+.Bar1 ul{
+	list-style-type: none;
+	height: 55px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	display: flex;
+	align-items: center;
+}
+.Bar1 li{
+	width: 20%;
+	text-align: center;
+	float: left;
+	font-size: 20px;
+	border-right: 2px solid black;
+}
+.Bar1 li a.current{
+	text-decoration: none;
+}
+
+.Bar2 ul {
+	display: flex;
+	align-items: center;
+	background-color: blue;
+	list-style-type: none;
+}
+.Bar2 li  {
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	font-size: 20px;
+	border-right: 2px solid white;
+	list-style-type: none;
+	position: relative;
+}
+.Bar2 ul li a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+.Bar2 ul li > .submenu{
+	display: none;
+}
+.Bar2 ul li:hover .submenu{
+	display: block;
+	background: black;
+	position: absolute;
+}
+.Bar2 ul li:hover .submenu li{
+	float: none;
+	color: white;
+	border-right: none;
+}
+.Bar2 a.current{
+	color: yellow;
+}

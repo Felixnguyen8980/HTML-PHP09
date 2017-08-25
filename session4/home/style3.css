@@ -15,8 +15,8 @@ body{
 }
 .frame{
 	padding: 0;
-	width: 93%;
-	height: 93%;
+	width: 95%;
+	height: 95%;
 	margin: auto;
 	 border: 3px solid #757675;
 	box-sizing: border-box;
@@ -39,7 +39,7 @@ body{
 }
 .header img{
 	width: 6%;
-	height: 99%;
+	height: 85%;
 	float: left;
 }
 .mainDetail{
@@ -90,6 +90,10 @@ body{
 	text-align: right;
        
     align-items:center;
+}
+.footer p{
+	padding-top: 1%;
+	font-size: 80%;
 }
 a{
 	color: green;
