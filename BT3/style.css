@@ -172,6 +172,7 @@ body{
 .news-container li.new h2{
 	font-size: 12pt;
 	height: 30px;
+	text-align: left;
 }
 .news-container .new .imgnew{
 	margin: 10px auto;
@@ -293,4 +294,31 @@ body{
 	height: 50px;
 	margin-bottom: 10px;
 	font-size: 17px;
+}
+
+.table ul.row{
+	width: 1500px;
+	list-style-type: none;
+}
+.table ul li.normal{
+	width: 15%;
+	float: left;
+	border: 1px solid #fbfbfb;
+
+}
+.table ul li{
+	height: 70px;
+	line-height: 40px;
+	font-size: 20px;
+}
+.table ul li.maincol{
+	width: 39%;
+
+	float: left;
+	border: 1px solid #fbfbfb;
+}
+#row1 li{
+	line-height: 60px;
+	background-color: #ae1a1f;
+	color: white;
 }
