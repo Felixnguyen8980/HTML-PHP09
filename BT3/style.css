@@ -1,0 +1,293 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: black;
+	box-sizing: border-box;
+	border: none;
+}
+h1{
+	font-size: 24px;
+}
+p{
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family:'Roboto Condensed', sans-serif;
+	background-color: white;
+}
+#header{
+	height: 97px;
+	background-color: #ffc600;
+}
+#header .content{
+	width: 1500px;
+	height: 100%;
+	margin: 0 auto;
+	font-weight: bold;
+}
+#header .content img{
+	width: 34%;
+	height: 97%;
+	float: left;
+	padding: 6px 15px 0 15px;
+	box-sizing: border-box;
+
+}
+#header .mainDetail{
+	float: right;
+	width: 66%;
+	padding: 19px 15px 0 15px;
+	box-sizing: border-box;
+}
+#header h1{
+	height: 18.7px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+#header p{
+	height: 12.5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+#mainmenu{ 
+	background-color: #ae1a1f;
+}
+#mainmenu .content{
+	width: 1500px;
+	margin: 0 auto;
+}
+#mainmenu .content ul{
+	text-align: center;
+	list-style-type: none;
+}
+#mainmenu ul li{
+	height: 45px;
+	line-height: 45px;
+	display: inline-table;
+}
+#mainmenu .content{
+	width: 1500px;
+	margin: 0 auto;
+}
+
+#mainmenu ul li{
+	height: 50px;
+	line-height: 50px;
+	display: inline-table;
+	position: relative;
+}
+#mainmenu ul li a{
+	font-size: 16px;
+	text-decoration: none;
+	padding-right: 15px;
+	padding-left: 15px;
+	color: yellow;
+	display: block;
+	
+}
+#home{
+	position: relative;
+	left: 6px;
+	background-color: black;
+	color: yellow;
+}
+#mainmenu li a:hover:not(#home){
+	background-color: yellow;
+	color: black;
+}
+.caret{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid yellow;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+#mainmenu li:hover .caret{
+	border-top: 4px solid black;
+}
+#mainmenu ul li > .submenu{
+	position: absolute;
+	display: none;
+}
+#mainmenu ul li:hover .submenu{
+	display: block;
+}
+.submenu li{
+	width: 200px;
+	background-color: black;
+	color: yellow;
+}
+.submenu li:hover{
+	background-color: yellow;
+	color: black;
+}
+#main-container{
+	width: 1500px;
+	margin: 10px auto;
+	text-align: center;
+}
+#main-container #mainimg{
+	width: 1500px;
+}
+#main-container .titleheader{
+	height: 40px;
+	line-height: 40px;
+	margin: 2px auto;
+	font-size: 25px;
+	background-color: #f1f1f1;
+	color: #ae1a1f;
+	border-left: 3px solid #ae1a1f;
+	font-weight: normal;
+	padding-left: 10px;
+	text-align: left;
+}
+#main-container .titleheader .btm-dangky{
+	height: 90%;
+	float: right;
+	background-color: #ae1a1f;
+	color: white;
+	font-size: 14px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.news-container{
+	width: 1500px;
+	margin: 10px auto;
+}
+.news-container ul.content{
+	text-decoration: none;
+	list-style-type: none;
+}
+.news-container li.new{
+	width: 470px;
+	display: inline-table;
+	margin: 0 5px 0 5px;
+}
+.news-container li.new h2{
+	font-size: 12pt;
+	height: 30px;
+}
+.news-container .new .imgnew{
+	margin: 10px auto;
+ 	width: 460px;
+ 	height: 300px;
+}
+.news-container .time {
+	text-align: left;
+}
+.news-container .news-container p{
+	text-align: left;
+	margin: 3px auto;
+}
+.daotao-container{
+	width: 1500px;
+	margin: 10px auto;
+	margin-bottom: 60px;
+}
+.daotao-container ul.content{
+	list-style-type: none;
+}
+.daotao-container ul.content li{
+	width: 340px;
+	display: inline-table;
+	margin: 0 5px 0 5px;
+}
+.daotao-container ul.content li img{
+	margin: 10px auto;
+	width: 330px;
+	height: 400px;
+}
+.daotao-container ul.content li h2{
+	text-align: center;
+	color: #ae1a1f;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.daotao-container ul.content li h3{
+	text-align: center;
+	color: black;
+	font-size: 17px;
+	height: 30px;
+	font-weight: bold;
+	line-height: 15px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.daotao-container ul.content li p{
+	text-align: justify;
+	font-weight: normal;
+	font-size: 15px;
+	height: 60px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.daotao-container ul.content li .btm{
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	background-color:#c83838;
+	margin: 0 auto;
+}
+.daotao-container ul.content li .btm:hover{
+	background-color:#9d3c3c;
+}
+#loiich-banner{
+	text-align: center;
+	font-weight: bold;
+	font-size: 27px;
+	margin-bottom: 5px;
+}
+#donvi-banner{
+	text-align: center;
+	font-weight: normal;
+	font-size: 23px;
+	margin-bottom: 20px;
+}
+.khoahoc-container{
+	width: 1500px;
+	margin: 10px auto;
+	margin-bottom: 60px;
+}
+.khoahoc-container ul.content{
+	list-style-type: none;
+}
+.khoahoc-container ul.content li{
+	display: inline-table;
+	width: 340px;
+	margin: 0 5px 0 5px;
+}
+.khoahoc-container ul.content li img{
+	width: 150px;
+	height: auto;
+	margin-bottom: 15px;
+}
+.khoahoc-container ul.content #titleblock h3{
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.khoahoc-container ul.content #titleblock h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	margin-bottom: 15px;
+	color: #9d3c3c;
+}
+.khoahoc-container ul.content #titleblock p{
+	text-align: center;
+	height: 50px;
+	margin-bottom: 10px;
+	font-size: 17px;
+}
