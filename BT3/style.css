@@ -180,10 +180,13 @@ body{
 }
 .news-container .time {
 	text-align: left;
+	margin-bottom: 5px;
 }
-.news-container .news-container p{
-	text-align: left;
+
+.news-container p{
+	text-align: justify;
 	margin: 3px auto;
+
 }
 .daotao-container{
 	width: 1500px;
