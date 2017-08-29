@@ -1,0 +1,39 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+html{
+	font-size:16px;
+}
+.content{
+
+	border: 1px solid black;
+
+}
+.subcontent1{
+	height: 200px;
+	width: 150px;
+	margin:10px;
+	border: 1px solid black;
+	display: block;
+}
+.subcontent2{
+	height: 200px;
+	width: 400px;
+	margin:10px;
+	border: 1px solid black;
+	display: inline-table;
+}
+.cover{
+
+	border: 1px solid black;
+}
+@media screen and (max-width: 768){
+	.subcontent1{
+		display: block;
+	}
+	.subcontent2{
+		display: block;
+	}
+}
