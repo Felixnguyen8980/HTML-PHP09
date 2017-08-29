@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
-<div>
+<div class="classform">
 	<form name="email_form" acion="" method="post">
 	<p>Please enter an email address</p>
 	<p>Email:<input type="text" name="email"></p>
@@ -13,7 +13,35 @@
 	<span><input type="submit" name="submit" value="Alert Me"></span>	
 		<span><input type="submit" name="submit" value="Checkout"></span>	
 			<span><input type="submit" name="submit" value="Reset"></span>	
-				<span><input type="submit" name="submit" value="Add to cart"></span>			
+				<span><input type="image" src="glyphicons-calendar.png" name="submit" value="Add to cart" img></span>	
+	<p>Password:<input type="password" name="Password" placeholder="please enter your password"></p>		
+	<p>Id:<input type="hidden"  name="Password"></p>
+	<div>
+	Gender :
+		<span>
+		male <input type="radio" name="sex" value="male" checked>
+		female<input type="radio" name="sex" value="female">
+		Another<input type="radio" name="sex" value="Another">
+		</span>
+	</div>
+	<div>
+	<span>Foods :</span>
+		<span>
+		<p>chicken<input type="checkbox" name="Foods" value="chicken"></p>
+		<p>beef<input type="checkbox" name="Foods" value="beef"></p>
+		<p>botato<input type="checkbox" name="Foods" value="botato"></p>
+		<p>ice-cream<input type="checkbox" name="Foods" value="ice-cream"></p>
+		<p>City:</p>
+		</span>
+	<div>
+		<select name=City" >
+			<option value="Danang">Danang</option>
+			<option value="HCM">HCM</option>
+			<option value="HN">HN</option>
+			<option value="QN">QN</option>
+
+			
+		</select>
 	</form>
 </div>
 </body>

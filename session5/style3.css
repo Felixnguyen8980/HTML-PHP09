@@ -1,0 +1,9 @@
+.container{
+	padding: 15px;
+	width: 300px;
+	border: 2px solid black;
+	box-shadow: 3px 3px 3px black;
+}
+.container p{
+	margin-bottom: 4px;
+}
