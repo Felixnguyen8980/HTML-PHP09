@@ -1,0 +1,19 @@
+.Container{
+	width: 320px;
+	height: 240px;
+}
+p{
+	font-size: 16px;
+}
+#id1-1{
+	width: 100%;
+	margin:0px 5px 5px 3px;
+}
+#id1-2{
+	width: 50%;
+	margin: 0 10px 5px 10px;
+}
+#id1-3{
+	width: 20%;
+	margin: 0 10px 5px 5px;
+}

@@ -57,19 +57,18 @@ body{
 		height: 10em;	
 	}
 	#hero{
-		width: 63%;
+		width: 62%;
 		margin-right: 1em;
 		float:left;
 		height: 10em;
 		padding:1em;
 	}
 	#ad1{	
-		width: 36%
+		width: 35%;
 		height: 10em;
 		line-height: 10em;
 		background-color: #6fa6dc;
 		float:right;
-		width: 36%;
 		text-align: center;
 	}
 	.subpanel .cover .content{
@@ -77,7 +76,7 @@ body{
 		line-height: 6em;
 	}
 	#id2-1{
-		width: 60%;
+		width: 59%;
 		margin-right: 0.6em;
 		float:left;
 	}
@@ -88,11 +87,11 @@ body{
 /*subpanel*/
 /*mainpanel*/
 	.mainpanel{
-		margin-top: 1em;
+		margin-bottom: 1em;
 		height: 25em;
 	}
 	#maincontent{
-		width: 63%;
+		width: 62%;
 		margin-right: 1em;
 		float: left;
 		padding:1em;
@@ -101,7 +100,7 @@ body{
 		display: none;
 	}
 	#sidebar{	
-		width: 36%;
+		width: 35%;
 		float:right;
 		padding:1em;
 	}
@@ -112,158 +111,173 @@ body{
 		width: 35%;
 		margin-right: 1em;
 		float:left;
-		height: 12em;
-		line-height: 12em;
+		height: 21em;
+		line-height: 21em;
 		text-align: center;
 		
 	}
 	#id4-2{
 		width: 63%;
 		float:right;
-		height: 12em;
-		line-height: 12em;	
+		height: 21em;
+		line-height: 21em;	
 		text-align: center;
 	}
 	#sidebar .content{
-		width: 98%
+		width: 99%;
 		margin: 0 auto;
-		height: 12em;
-		line-height: 12em;
+		height: 21em;
+		line-height: 21em;
 		text-align: center;
 	}
 /*mailpanel*/
 /*footer*/
 #footer{
-	padding:5px;
+	padding:10px 0 0 10px;
 	background-color: #a1c2f8;
 	height: 3em;
 }
 /*footer*/
-
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1550px){
 	body{
-		width: 955px;
+		width: 1540px;
 	}
 	#id1-2{
 		width: 53%;
 	}
 	#id1-3{
-		width: 28%;
+		width: 27%;
 	}
-	#id2-1{
-		width: 57%;
-		margin-right: 0.6em;
-	}
-	#id2-2{
-		width: 39%;
-	}
-	#maincontent{
-		width: 63%;
-	}
-	#hero{
-		width: 63%;
+}
+
+@media screen and (max-width: 960px){
+	body{
+		width: 955px;
 	}
 }
 
 @media screen and (max-width: 768px){
+	html{
+		font-size: 12px;
+	}
 	body{
-		width: 765px;
-	}
-	#id1-2{
-		width: 51%;
-	}
-	#id1-3{
-		width: 28%;
-	}
-	#id2-1{
-		width: 57%;
-		margin-right: 0.6em;
+		width: 760px;
 	}
 	#id2-2{
-		width: 39%;
-	}
-	#maincontent{
-		width: 63%;
-	}
-	#hero{
-		width: 63%;
-	}
-	#id4-1{
-		display: inline-table;
-		width: 40%;
-		margin-right: 0.6em;
+		width: 36%;
 	}
 	#id4-2{
-		display: inline-table;
-		width: 57%;
-	}
-}
-
-@media screen and (max-width: 550px){
-	body{
-		width: 550px;
-	}
-	#id1-2{
-		width: 49%;
-	}
-	#id1-3{
-		width: 28%;
-	}
-	#id2-1{
-		width: 57%;
-		margin-right: 0.6em;
+		width: 60%;
 	}
 	#hero{
-		width: 97%;
-	}
-	#id2-1{
-		height:3em;
-		line-height: 3em;
-		display:block;
-		width: 97%;
-		margin-bottom: 0.6em;
-	}
-	#id2-2{
-		height:3em;
-		line-height: 3em;
-		height:3em;
-		display:block;
-		width: 97%;
+		width: 99%;
 	}
 	#ad1{
 		display: none;
 	}
-	#maincontent{
-		width: 97%;
-		display: block;
+	#id2-1{
+		float: none;
+		width: 96%;
+		height: 2.7em;
+		line-height: 2.7em;
+		margin-bottom: 1em;
 	}
-	#id4-1{
-		width: 60%;
-		display: inline-table;
-		margin-bottom: 0.5em;
+	#id2-2{
+		float: none;
+		width: 96%;
+		height: 2.5em;
+		line-height: 2.5em;
 	}
-	#ad2{
-		width: 35%;
-		display: inline-table;
-		background-color: #6fa6dc;
-		height: 12em;
-		line-height: 12em;
-		margin-bottom: 0.5em;
+
+	/* body */
+		.mainpanel{
+			height: 40em;
+		}
+		#maincontent{
+			float: none;
+			width: 99%;
+			height: 32em;
+			margin-bottom: 1em;	
+		}
+		#id4-1{
+			width: 58%;
+			height: 6em;
+			line-height: 6em;
+			float: left;
+		}
+		#ad2{
+			width: 39%;
+			display: block;
+			float: right;
+			height: 6em;
+			line-height: 6em;
+			text-align: center;
+			background-color:#6fa6dc; 
+		}
+		#id4-2{
+			margin-top: 1em;
+			width: 99%;
+			float: none;
+			height: 22em;
+			line-height: 22em
+		}
+		#sidebar{
+			float: none;
+			width: 99%;
+			display: block;
+			margin-bottom: 1em;
+		}
+		#sidebar .content{
+		width: 98%;
+		margin: 0 auto;
+		height: 3em;
+		line-height: 3em;
 		text-align: center;
 	}
-	#id4-2{
-		width: 98%;
-		height: 65%;
-		display: block;
-		height: 10em;
-	}
-	
-
 }
+
+@media screen and (max-width: 551px){
+	body{
+		width: 545px;
+	}
+}
+
 
 @media screen and (max-width: 320px){
 	body{
-		width: 320px;
+		width: 315px;
+	}
+	#id1-1{
+		float: none;
+		width: 96%;
+	}
+	#id1-3{
+		width: 40%;
+	}
+	#header{
+		height: 9em;	
+	}
+	#id4-1{
+		float: none;
+		height: 3em;
+		line-height: 3em;
+		width: 99%;
+		margin-bottom: 1em;
+	}
+	#ad2{
+		float: none;
+		height: 3em;
+		line-height: 3em;
+		width: 99%;
+	}
+	#sidebar{
+		display: none;
+	}
+	.mainpanel{
+		height: 35em;
+	}
+	#maincontent{
+		height: 34em;
 	}
 }
 
