@@ -1,16 +1,17 @@
 *{
-	padding:0;
-	margin:0;
+	padding:0px;
+	margin:0px;
 	box-sizing: border-box;
 }
 html{
-	font-size: 18px;
+	font-size: 14px;
 }
 body{
-	width: 1850px;
-	padding:3px;
 }
-
+#container{
+	width: 99%;
+	margin: 0px auto;
+}
 .cover{
 	background-color: #9dc4fb;
 }
@@ -20,115 +21,127 @@ body{
 }
 .title{
 	font-size: 1.5em;
-	padding-bottom: 4;
+	margin-bottom: 0.5em;
+}
+.clear{
+	clear: both;
+}
+p{
+		width: 100%;
+		text-align: center;
 }
 /*header*/
 	#header{
 		padding:5px;
 		height: 6em;
-	}
-	#header .content{
-		height: 2.5em;
-		margin-left: 0.3em;
-		margin-right: 0.3em;
-		margin-bottom: 0.6em;
-		line-height: 2.5em;
-		float: left;
-	}
-	#id1-1{
-		
-		width: 15%;
-	}
-	#id1-2{
-		width: 55%;
-	}
-	#id1-3{
-		width: 28%;
-	}
-	#header{
 		margin-bottom: 1em;
 	}
-	
+	#header .content{
+		display: flex;
+		align-items: center;
+		
+	}
+	#id1-1{	
+		margin-left: 0.5%;
+		margin-right: 0.5%;
+		width: 15%;
+		float: left;
+		height: 40%;
+	}
+	#id1-2{
+		margin-left: 0.5%;
+		margin-right: 0.5%;
+		width: 55%;
+		float: left;
+		height: 40%;
+	}
+	#id1-3{
+		margin-left: 0.5%;
+		margin-right: 0.5%;
+		width: 27%;
+		float: left;
+		height: 40%;	
+	}
 /*header*/
 
 /*subpanel*/
 	.subpanel{
 		margin-bottom: 1em;
-		height: 10em;	
+		height: 11em;
 	}
 	#hero{
 		width: 62%;
-		margin-right: 1em;
+		height: 100%;
+		margin-right: 1%;
 		float:left;
-		height: 10em;
 		padding:1em;
 	}
-	#ad1{	
-		width: 35%;
-		height: 10em;
-		line-height: 10em;
+	.subpanel #ad1{	
+		width: 37%;
+		height: 100%;
 		background-color: #6fa6dc;
-		float:right;
-		text-align: center;
-	}
-	.subpanel .cover .content{
-		height: 6em;
-		line-height: 6em;
+		float:left;
+		display: flex;
+		align-items: center;
 	}
 	#id2-1{
-		width: 59%;
-		margin-right: 0.6em;
+		height: 70%;
+		width: 58%;
+		display: flex;
+		align-items: center;
+		margin-right: 0.5em;
 		float:left;
 	}
 	#id2-2{
+		height: 70%;
 		width: 39%;
-		float:right;
+		float:left;
+		display: flex;
+		align-items: center;
 	}
 /*subpanel*/
 /*mainpanel*/
 	.mainpanel{
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 		height: 25em;
 	}
 	#maincontent{
 		width: 62%;
-		margin-right: 1em;
+		height: 100%;
+		margin-right: 1%;
 		float: left;
 		padding:1em;
 	}
 	#ad2{
 		display: none;
+		float: left;
 	}
 	#sidebar{	
-		width: 35%;
-		float:right;
+		width: 37%;
+		height: 100%;
+		float:left;
 		padding:1em;
 	}
 	#maincontent .content{
-		display: inline-table;
+		float:left;
+		display: flex;
+		align-items: center;
 	}
 	#id4-1{
-		width: 35%;
-		margin-right: 1em;
-		float:left;
-		height: 21em;
-		line-height: 21em;
-		text-align: center;
-		
+		height: 85%;
+		width: 37%;
+		margin-right: 1%;	
 	}
 	#id4-2{
-		width: 63%;
-		float:right;
-		height: 21em;
-		line-height: 21em;	
-		text-align: center;
+		height: 85%;
+		width: 60%;	
 	}
-	#sidebar .content{
+	#id5-1{
 		width: 99%;
 		margin: 0 auto;
-		height: 21em;
-		line-height: 21em;
-		text-align: center;
+		height: 85%;
+		display: flex;
+		align-items: center;
 	}
 /*mailpanel*/
 /*footer*/
@@ -138,146 +151,112 @@ body{
 	height: 3em;
 }
 /*footer*/
-@media screen and (max-width: 1550px){
-	body{
-		width: 1540px;
-	}
-	#id1-2{
-		width: 53%;
-	}
-	#id1-3{
-		width: 27%;
-	}
+@media screen and (max-width: 900px){
 }
-
-@media screen and (max-width: 960px){
-	body{
-		width: 955px;
-	}
+@media screen and (max-width: 770px){
+ 		.subpanel #ad1{
+ 			display: none;
+ 		}
+ 		.subpanel{
+ 			height: 12em;
+ 			display: block;
+ 		}
+ 		#hero{
+ 			width: 100%;
+ 		}
+ 		#id2-1{
+ 			height: 40%;
+ 			width: 100%;
+ 			float: none;
+ 			margin-bottom: 0.2em;
+ 		}
+ 		#id2-2{
+ 			height: 30%;
+ 			width: 100%;
+ 			float: none;
+ 		}
+ 		#id4-1{
+ 			width: 60%;
+ 			height: 30%;
+ 		}
+ 		#ad2{
+ 			width: 37%;
+ 			height: 30%;
+ 			display: flex;
+ 			align-items: center;
+ 			float: left;
+ 			background-color: #6fa6dc;
+ 		}
+ 		#id4-2{
+ 			height: 55%;
+ 			width: 100%;
+ 			margin-top: 1%;
+ 			float: none;
+ 		}
+ 		#maincontent{
+ 			float: none;
+ 			width: 100%;
+ 			margin-bottom: 1%; 
+ 			height: 70%
+ 		}
+ 		#sidebar{
+ 			height: 4em;
+ 			width: 100%;
+ 		}
+ 		#sidebar{
+ 			height: 29%;
+ 		}
+ 		#id5-1{
+ 			height: 50%;
+ 		}
 }
-
-@media screen and (max-width: 768px){
-	html{
-		font-size: 12px;
-	}
-	body{
-		width: 760px;
-	}
-	#id2-2{
-		width: 36%;
-	}
-	#id4-2{
-		width: 60%;
-	}
-	#hero{
-		width: 99%;
-	}
-	#ad1{
-		display: none;
-	}
-	#id2-1{
-		float: none;
-		width: 96%;
-		height: 2.7em;
-		line-height: 2.7em;
-		margin-bottom: 1em;
-	}
-	#id2-2{
-		float: none;
-		width: 96%;
-		height: 2.5em;
-		line-height: 2.5em;
-	}
-
-	/* body */
-		.mainpanel{
-			height: 40em;
-		}
-		#maincontent{
-			float: none;
-			width: 99%;
-			height: 32em;
-			margin-bottom: 1em;	
-		}
-		#id4-1{
-			width: 58%;
-			height: 6em;
-			line-height: 6em;
-			float: left;
-		}
-		#ad2{
-			width: 39%;
-			display: block;
-			float: right;
-			height: 6em;
-			line-height: 6em;
-			text-align: center;
-			background-color:#6fa6dc; 
-		}
-		#id4-2{
-			margin-top: 1em;
-			width: 99%;
-			float: none;
-			height: 22em;
-			line-height: 22em
-		}
-		#sidebar{
-			float: none;
-			width: 99%;
-			display: block;
-			margin-bottom: 1em;
-		}
-		#sidebar .content{
-		width: 98%;
-		margin: 0 auto;
-		height: 3em;
-		line-height: 3em;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 551px){
-	body{
-		width: 545px;
-	}
-}
-
-
-@media screen and (max-width: 320px){
-	body{
-		width: 315px;
+@media screen and (max-width: 420px){
+	#header{
+		height: 9em;
 	}
 	#id1-1{
+		height: 30%;
 		float: none;
-		width: 96%;
+		width: 99%;
+		margin-bottom: 1%;
+	}
+	#id1-2{
+		height: 30%;
+		width: 48%;
+		margin-left: 1%;
+		margin-right: 1%;
 	}
 	#id1-3{
-		width: 40%;
+		height: 30%;
+		width: 48%;
+		margin-left: 1%;
+		margin-right: 1%;
 	}
-	#header{
-		height: 9em;	
+	#id2-1{
+		display: none;
+	}
+	.subpanel{
+		height: 7em;
+	}
+	#id2-2{
+		height: 50%;
 	}
 	#id4-1{
+		width: 100%;
 		float: none;
-		height: 3em;
-		line-height: 3em;
-		width: 99%;
-		margin-bottom: 1em;
+		height: 14%;
+		margin-bottom: 1%;
+	}
+	#maincontent{
+		height: 99%;
 	}
 	#ad2{
+		width: 100%;
 		float: none;
-		height: 3em;
-		line-height: 3em;
-		width: 99%;
+		height: 14%;
+		margin-bottom: 1%;
 	}
 	#sidebar{
 		display: none;
 	}
-	.mainpanel{
-		height: 35em;
-	}
-	#maincontent{
-		height: 34em;
-	}
 }
-

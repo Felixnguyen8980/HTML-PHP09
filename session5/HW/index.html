@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CV</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>	
+	<div class="cover">
+	<form name="CV" acion="" method="post">
+		<div class="header">
+			<div id="ava">
+				<input type="file" name="ava">
+			</div>
+			<div id="profile">
+				<p><input id="name" type="text" name="name" required placeholder="Your name"
+				title="Must be John Statham or...."></p>
+				<p><input type="text" name="address" required="" placeholder="address"></p>
+				<p><input type="text" name="email" required="" placeholder="email"></p>
+				<p><input type="text" name="phonenumber" required="" placeholder="phonenumber"
+				pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+				title="Must be 999-999-9999"></p>
+				<div class="gender">
+					<input type="radio" name="gender" value="male" checked="">Male
+					<input type="radio" name="gender" value="female">Female
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div><!-- header -->
+		<div class="mainDetail">
+			<section>
+				<div>
+					<img src="" alt="" width="50" height="50">
+					<h2>About Your Self</h2>
+
+					<div class="info">
+						<textarea rows="10" cols="87" placeholder="Please enter your comments"></textarea>
+					</div>
+				</div>
+				<div>
+					<img src="" alt="" width="50" height="50">
+					<h2>Education</h2>
+					<div class="info">
+						<textarea rows="8" cols="87" placeholder="Please write here"></textarea>
+					</div>
+				</div>
+				<div>
+					<img src="" alt="" width="50" height="50">
+					<h2>Education</h2>
+					<div class="info">
+						<textarea rows="8" cols="87" placeholder="Please write here"></textarea>
+					</div>
+				</div>
+				<div>
+					<img src="" alt="" width="50" height="50">
+					<h2>Skills</h2>
+					<div class="info">
+						<textarea rows="5" cols="87" placeholder="Please write here"></textarea>
+					</div>
+				</div>
+				<div>
+					<img src="" alt="" width="50" height="50">
+					<h2>Awards & Activities</h2>
+					<div class="info">
+						<textarea rows="5" cols="87" placeholder="Please write here"></textarea>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div id="btn">
+					<span><input type="submit" name="submit" value="Submit"></span>
+					<span><input id="reset" type="reset" name="reset" value="Reset"></span>
+				</div>
+			</footer>
+		</div>
+		</form>
+	</div>
+
+</body>
+</html>
