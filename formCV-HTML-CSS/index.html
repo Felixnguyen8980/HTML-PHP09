@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CV</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>	
+	<div class="container">
+		<form name="CV" acion="" method="post">
+			<div class="menu">
+				<ul>
+					<li><a href="#mainDetail" title="Profile">Profile</a></li>
+					<li><a href="#intro" title="Introduction">About Your Self</a></li>
+					<li><a href="#education" title="">Education</a></li>
+					<li><a href="#skills" title="">Your Skill</a></li>
+					<li><a href="#awards" title="">Awards</a></li>
+					<li><a href="#submit" title="">Submit</a></li>
+				</ul>	
+			</div>
+			<div class="content">
+				<div class="header" id="mainDetail">
+					<div id="avt">
+						<div id="img">
+							
+						</div>
+						<input type="file" name="avt">
+					</div>
+					<div id="Detail">
+						<p><input id="name" type="text" name="name" required="" placeholder="Your name"></p>
+						<p><input id="contract" type="text" name="adress" placeholder="Adress"></p>
+						<p><input type="text" name="email" placeholder="Email"></p>		
+						<p><input type="text" name="phonenumber" placeholder="Phone number"></p>
+						<input class="gender" type="radio" name="gender" value="male">Male
+						<input class="gender" type="radio" name="gender" value="female">Female
+					</div>
+				</div>
+				<div class="maincontent">
+					<div id="intro">
+						<h2>About Your Self</h2>
+						<textarea rows="10" cols="60" placeholder="Please enter your comments"></textarea>
+
+					</div>
+					<div id="education">
+						<h2>Education</h2>
+						<textarea rows="10" cols="60" placeholder="Please enter your comments"></textarea>
+					</div>
+					<div id="skills">
+						<h2>Your Skills</h2>
+						<textarea rows="10" cols="60" placeholder="Please enter your comments"></textarea>
+					</div>
+					<div id="awards">
+						<h2>Awards and Activities</h2>
+						<textarea rows="10" cols="60" placeholder="Please enter your comments"></textarea>
+					</div>
+				</div>
+				<dir class="footer" id="submit">
+					<span><input type="submit" name="submit" value="Submit"></span>
+					<span><input type="reset" name="submit" value="reset" ></span>
+				</dir>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
