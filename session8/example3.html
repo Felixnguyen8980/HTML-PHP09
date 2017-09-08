@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condition</title>
+</head>
+<body>
+	<form action="#" method="#" accept-charset="utf-8">
+		<input type="text" name="number" id="number"><br>
+		<input type="button" name="" value="submit" onclick="myFunction()">
+	</form>
+		Kết quả : <p id="ketqua"></p>
+	<script type="text/javascript" charset="utf-8" async defer>
+		function myFunction(){
+		var x=document.getElementById("number").value;
+			if(x%15==0){
+					document.getElementById('ketqua').innerHTML="MUOI LAM";
+			}
+			else{
+				if(x%10==0){
+					document.getElementById('ketqua').innerHTML="MUOI";
+				}
+				else
+				   if (x%3==0) {
+				   	document.getElementById('ketqua').innerHTML="BA";
+				   }
+				   else{
+				   	document.getElementById('ketqua').innerHTML="KHAC";
+				   }
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+</head>
+<body>
+	<form action="#" method="get" accept-charset="utf-8">
+			Price : <input type="text" name="Price" id="Price" value="" onchange="printPrice()"> <br>
+			Discount : <input type="text" name="Discount" id="Discount" value=""> <br>
+			<input type="button" name="" value="submit" onclick="printNewPrice()"><br>
+	</form>
+	<p id="printerHere" ></p> 
+	<p id="newPrice" ></p>
+	<script>
+		function printPrice(){
+			document.getElementById("printerHere").innerHTML = "Price :" +document.getElementById("Price").value;
+		}
+		function printNewPrice(){
+			document.getElementById("newPrice").innerHTML = "newPrice :" +
+			 (document.getElementById("Price").value * (100-document.getElementById("Discount").value)/100);
+		}
+	</script>
+
+</body>
+</html>

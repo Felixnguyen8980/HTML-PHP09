@@ -1,0 +1,286 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 10px;
+}
+body{
+	width: 100%;
+}
+/* html{
+	font-size: 10px;
+} */
+.container{
+	padding: 0.5em 1.5em;
+}
+header{
+	margin: 1em 0 4em;
+}
+a{	
+	font-size: 1.7em;
+	color: black;
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+}
+.search_box{
+	width: 100%;
+	height: 3.5em;
+	position: relative;
+	margin-bottom: 1em;
+}
+.search_box .box{
+	height: 2.5em;
+	position: absolute;
+	right: 0.7em;
+	bottom: 0;
+
+}
+#search_box2{
+	display: none;
+}
+.search{
+	position: relative;
+	height: 2.5em;
+	display: flex;
+	align-items: center;
+}
+.search .btn{
+	height: 2.5em;
+	width: 2.5em;
+	position: absolute;
+	right: 0.7em;
+	background: #fff;
+	border: none;
+}
+.search .btn img{
+  	height: 2.2em;
+  	width: 2.2em;
+ }
+.search input{
+	line-height: 2.4em;
+}
+.container .menu{
+	height:7em;
+}
+#logopanel{
+	height:6em;
+	width: 35%;
+	float: left;
+	position: relative;
+}
+#logopanel .img{
+	position: absolute;
+	height: 5.2em;
+	left: 3em;
+}
+#menubar{
+	position: relative;
+	float: right;
+	height: 6em;
+	width: 65%;
+}
+#menubar .box{
+	width: 90%;
+	position: absolute;
+	right: 0.7em;
+	display: flex;
+	justify-content: space-between;
+}
+#menubar .box .menuElement{
+	float: left;
+	width: 18%;	
+	border-bottom: 2px solid transparent;
+}
+#menubar .box .menuElement{
+	transition: ease-out 0.5s;
+}
+#menubar .box .menuElement:hover{
+	border-bottom-color: black;
+}
+.container .IntroPanel{
+	background-color: #dde7f0;
+	width: 100%;
+	text-align: right;
+	padding: 3em;
+	padding-right: 1em;
+	margin-bottom: 2em;
+}
+.container .IntroPanel h2{
+	font-size: 4em;
+	color: #839fb4;
+	margin-bottom: 1em;
+}
+.container .IntroPanel p{
+	font-size: 3em;
+	color: #ced8e1;
+	margin-bottom: 1em;
+}
+#AnswerPanel{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2em;
+}
+#AnswerPanel .Box{
+	height: 10em;
+	font-size: 2em;
+	color: #90a6b3;
+	line-height: 10em;
+	text-align: center;
+	display: inline-table;
+	width: 30%;
+	background-color: #d3dfeb;
+	text-align: center;
+}
+
+#ProjectPanel{
+	width: 100%;
+	text-align: center;
+}
+#ProjectPanel h2{
+	font-size: 2em;
+	color: #bbccd5;
+	margin-bottom: 2em;
+}
+#ProjectPanel .Project_box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4em;
+}
+#ProjectPanel .Project_box .Project{
+	text-align: center;
+	display: inline-table;
+	text-align: center;
+	width: 24%;
+}
+#ProjectPanel .Project_box .Project .item{
+	height: 17em;
+	width: 100%;
+	background-color: #d3dfeb;
+}
+
+#ProjectPanel .Project_box .Project .infor{
+	display: block;
+}
+#name{
+	width: 80%;
+	font-size: 1.4em;
+	float: left;
+	text-align: left;
+	color: #cbd6dc;
+}
+#cost{
+	font-size: 1.5em;
+	float: right;
+	text-align: right;
+	color: #a6b8c4;
+}
+#discribe{
+	font-size: 1.5em;
+	text-align: left;
+	color: #cfd0d2;
+}
+#AddToCast{
+	background-color: #84a6c1;
+}
+footer{
+	background-color: #d2e0ea;
+	padding: 2em;
+	text-align: center;
+}
+#FootContainer{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4em;
+}
+
+#FootContainer .FootBox{
+	text-align: center;
+	display: inline-table;
+	width: 15%;
+	background-color: #d3dfeb;
+	text-align:left;
+
+}
+#FootContainer .FootBox p,h3{
+	font-size: 1.3em;
+	margin: 0.1em;
+}
+#FootContainer .FootBox p{
+	color: #acbecc;
+}
+#FootContainer .FootBox h3{
+	color: #97aebb;
+}
+#FB1 img{
+	height: 3em;
+}
+.PageEnd p{
+	color: #acbecc;
+}
+#Fbtn{
+	margin: 1em 0;
+	background-color: #7596ac;
+}
+#FB4_Container{
+	display: block;
+}
+#FB4_Container .box{
+	height: 1em;
+	width: 1em;
+	float: left;
+	border-radius: 50%;
+	border: 2px solid #7596ac;
+	margin-right: 1%;
+}
+#FB4 input{
+	width: 80%;
+}
+#BigBox{
+	margin: 1em 0;
+	width: 80%;
+	height: 4em;
+	background-color: #7596ac;
+}
+#FB5_Container{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+#FB5_Container .box{
+	height: 1em;
+	width: 16%;
+	display: inline-table;
+	background-color: #7596ac;
+}
+
+@media screen and (max-width: 740px){
+	#search_box1{
+		display: none;
+	}
+	#logopanel{
+		width: 100%;
+		display: block;
+	}
+	#logopane .img{
+		width: 35%;
+		float: left;
+	}
+	#search_box2{
+		width: 65%;
+		display: block;
+		float: right;
+	}
+	#menubar{
+		position: absolute;
+		top: 7em;
+		display: block;
+		float: none;
+		margin-bottom: 3em;
+	}
+	
+}
