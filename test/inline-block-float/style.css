@@ -1,0 +1,26 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+html{
+	min-height: 100%;
+}
+body{
+	min-height: 100%;
+}
+.container {
+	width: 100%;
+
+}
+.box{
+
+	right: 0;
+}
+.container .module{
+	height: 20px;
+	width: 30px;
+	float: left;
+	
+}
