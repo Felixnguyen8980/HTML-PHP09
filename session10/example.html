@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Object</title>
+	<meta name="viewport" content="width=device-width, user-scale=no">
+</head>
+<body>
+	<form action="#" method="#" onsubmit="return validateForm();" accept-charset="utf-8">
+		<p>Room: 
+			<select name="room" multiple>
+				<option value="1">Phong 1</option>
+				<option value="2">Phong 2</option>
+				<option value="3">Phong 3</option>
+				<option value="4">Phong 4</option>
+				<option value="5">Phong 5</option>
+			</select>
+		</p>
+		<p> Email:
+			<input id="Mail" type="text" name="" onchange="return checkMail()" required>
+		</p>
+		<p id="AlertIOMail"></p>
+		<p>Adults:
+			<input id="NumberOfAdults" type="text" name="" >
+		</p>
+		<p>Childrent:
+			<input id="NumberOfChilds" type="text" name="" >
+		</p>
+		<p id="AlertIOChild-Adults"></p>
+		<p>Coming-day:
+			<input id="ComingDay" type="Date" name="" >
+		</p>
+		<p>Leaving-day:
+			<input id="LeavingDay" type="Date" name="" >
+		</p>
+		<p id="AlertIOComingday-Leavingday"></p>
+		<input class="Submit" type="submit" name="Booking" value="Submit">
+		<script src="common.js" type="text/javascript" charset="utf-8" async defer></script>
+	</form>
+</body>
+</html>

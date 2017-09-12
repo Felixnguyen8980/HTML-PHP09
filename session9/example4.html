@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For-while</title>
+</head>
+<body>
+	<form action="#" method="#" accept-charset="utf-8">
+		<input type="text" name="number" id="number" onchange><br>
+		<input type="button" name="" value="submit" onclick="myFunction()">
+	</form>
+	<script type="text/javascript" charset="utf-8" async defer>
+		function myFunction(){
+			var x=document.getElementById("number").value;
+		 	for (var i = 0; i <=x; i++) {
+		 		if(i%15==0){
+					document.write(i,"MUOI LAM <br>");
+				}
+				else{
+					if(i%5==0){
+						document.write(i,"Nam <br>");
+					}
+					else
+				 	  if (i%3==0) {
+				  	 document.write(i,"BA <br>");
+				  	 }
+				}
+			}
+		}
+	</script>
+</body>
+</html>
