@@ -1,0 +1,176 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: Helvetica,Arial,sans-serif;
+}
+a{
+	text-decoration: none;
+}
+body{
+	width: 100%;
+}
+#container{
+	width: 100%;
+}
+
+/*-----header------*/
+header{
+	height: 82px;
+	background-color: #3c5a9a;
+}
+header .box{
+	height: 100%;
+	padding-top: 13px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #3c5a9a;
+	position: relative;
+}
+header .box .logo-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60%;
+}
+header .box .logo-box .logo{
+	height: 51px;
+	padding-top: 17px;
+}
+header .box .content-box{
+	height: 100%;
+	width: 40%;
+	display: grid;
+	grid-template-columns: 39% 39% 20%;
+	grid-gap: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 12px;
+	line-height:16.0833px;
+	padding-top: 10px;
+
+}
+header .box .content-box p{
+	padding: 4px;
+}
+#acccount{
+}
+#password a{
+	text-decoration: none;
+	color: #9cb4d8	;
+}
+#btn-submit{
+	
+
+}
+header .box .content-box .content{
+	width: 100%;
+	height: 25px;
+	padding: 3px 3px 4px 3px;
+	border: 0px;
+}
+/*----------body-container--------------*/
+#body-container{
+	background: linear-gradient(white, #d3d8e8);
+}
+#body-container .box {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 53% 47%;
+}
+#body-container .box .logo-box .intro{
+	height: 58px;
+	margin-top: 40px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 29px;
+	color: #0e385f;
+}
+#body-container .content-box .content{
+	border-radius: 5px;
+	font-size: 18px;
+	letter-spacing: normal;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	border: 1px solid #bdc7d8;
+	color: #5c616c;
+	margin-bottom: 10px;
+}
+#intro-content{
+	padding: 20px;
+}
+
+#intro-content h1{
+	line-height: 48.2333px;
+	font-size: 36px;
+}
+#intro-content p{
+	font-size: 19px;
+}
+#name{
+	display: grid;
+	grid-template-columns: 49% 49%;
+	grid-gap: 2%;
+}
+#name .content{
+	width: 100%;
+}
+#info-panel{}
+#info-panel .content{
+	width: 100%;
+}
+#password-panel{}
+#password-panel .content{
+	width: 100%;
+}
+#day-of-birth .box{
+	width: 100%;
+	height: 30px;
+	display: grid;
+	grid-template-columns: 60% 50%;
+}
+#day-of-birth .box a{
+	height: 11px;
+	color: #365899;
+}
+#day-of-birth .box .intro{
+	padding-left: 4px;
+}
+#day-of-birth .day{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+#gender{
+	padding: 20px;
+	padding-left: 20px;
+	font-size: 25px;
+	font-weight: 100;
+}
+#btnCreateAccount{
+	margin: 20px;
+}
+#btnCreateAccount button{
+	background: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
+	padding: 7px 20px;
+	font-size: 19px;
+	font-weight: 700;
+	color: white;
+}
+#page-msg{
+	padding: 20px;
+	border-top: 1px solid grey;
+}
+#page-msg a{
+	color: #365899;
+}
