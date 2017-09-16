@@ -19,3 +19,35 @@ function checkpass(){
 		return x;	
 	}
 }
+
+function validateForm(){
+	var name=document.getElementById("cname").value;
+
+	var subname=document.getElementById("sname").value;
+	var mobile=document.getElementById("mobile").value;
+	var f,m;
+	f=document.getElementById("female").checked;
+	m=document.getElementById("male").checked;
+	console.log(f);
+	console.log(m);
+	if ((f==false)&&(m==false)){
+		document.getElementById("bfemale").style.border="1px solid red";
+		document.getElementById("bmale").style.border="1px solid red";
+	}
+	if (name.length==0){
+		document.getElementById("cname").style.border="1px solid red";
+	}
+	if (subname.length==0){
+		document.getElementById("sname").style.border="1px solid red";
+	}
+	if ((mobile.length>12) &&(mobile.length<10)){
+				document.getElementById("mobile").style.border="1px solid red";
+
+	}
+	for (var i=0;i<=mobile.length-1;i++){
+		if((mobile[i]>9)||(mobile[i]<0)){
+			document.getElementById("mobile").style.border="1px solid red";
+			break;
+		}
+	}
+}

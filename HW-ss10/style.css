@@ -36,6 +36,7 @@ header .box .logo-box{
 	width: 60%;
 }
 header .box .logo-box .logo{
+
 	height: 51px;
 	padding-top: 17px;
 }
@@ -82,13 +83,20 @@ header .box .content-box .content{
 	display: grid;
 	grid-template-columns: 53% 47%;
 }
+#body-container .box .logo-box{
+	height: 100%;
+}
 #body-container .box .logo-box .intro{
-	height: 58px;
+	min-height: 50px;
 	margin-top: 40px;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 29px;
 	color: #0e385f;
+}
+#body-container .box .logo-box .logo{
+	width: 100%;
+	height: 250px;
 }
 #body-container .content-box .content{
 	border-radius: 5px;
@@ -173,4 +181,12 @@ header .box .content-box .content{
 }
 #page-msg a{
 	color: #365899;
+}
+#bfemale{
+	width: 120px;
+	display: inline-block;
+}
+#bmale{
+	width:100px;
+	display: inline-block;
 }
