@@ -83,11 +83,13 @@
 
 					frm.txt.value= frm.txt.value.slice(0,frm.txt.value.length-1)
 				}
-				if (frm.txt.value.length>=1)
+				if (frm.txt.value.length>=1) 
 				frm.txt.value= frm.txt.value+x;
-				if (frm.txt.value.length=0){
-
-				}
+				if (frm.txt.value.length=0) 
+					if (x="+" || x="-"){
+						frm.txt.value= frm.txt.value+x;
+					}
+					else {}
 			}
 
 		}
