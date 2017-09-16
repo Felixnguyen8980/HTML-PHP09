@@ -60,7 +60,7 @@
 					<input class="btn" type="button" name="btn0" value="0" onclick="dis(btn0.value)">
 				</div>
 				<div>
-					<input class="btn" type="button" name="btneq" value="=" onclick="txt.value=eval(frm.txt.value)">
+					<input class="btn" type="button" name="btneq" value="=" onclick="eq()">
 				</div>
 				<div>
 					<input class="btn" type="button" name="btnp" value="+" onclick="dis(btnp.value)">
@@ -68,6 +68,7 @@
 			</div>			
 		</form>
 	</div>
+	<p id="text">	</p>
 	<script type="text/javascript">
 		function dis (x) {
 			if ((0<=x)&&(x<=9)){
@@ -85,11 +86,11 @@
 				}
 				if (frm.txt.value.length>=1) 
 				frm.txt.value= frm.txt.value+x;
-				if (frm.txt.value.length=0) 
-					if (x="+" || x="-"){
+				if (frm.txt.value.length==0){
+					if(x=="+" || x=="-"){
 						frm.txt.value= frm.txt.value+x;
 					}
-					else {}
+				}
 			}
 
 		}
@@ -102,6 +103,20 @@
 		//BackSpace button function
 		function BS(){
 			frm.txt.value=frm.txt.value.slice(0,frm.txt.value.length-1)
+		}
+		function eq(){
+			var a=eval(frm.txt.value);
+			var b=a.toFixed(9);
+			console.log(b);
+			i=b.length-1;
+			console.log(i);
+			var c=b.charAt(i);
+			while ( c=="0"){
+				i--;
+				c=b.charAt(i);
+			}
+			frm.txt.value=b.slice(0,i+1);
+
 		}
 	</script>
 </body>
