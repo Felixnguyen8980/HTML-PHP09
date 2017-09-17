@@ -70,7 +70,10 @@
 	</div>
 	<p id="text">	</p>
 	<script type="text/javascript">
+		var kt=1;
 		function dis (x) {
+				console.log(x);
+				console.log(kt);
 			if ((0<=x)&&(x<=9)){
 			frm.txt.value= frm.txt.value+x;
 			}
@@ -81,11 +84,24 @@
 					frm.txt.value.charAt(frm.txt.value.length-1)=="*" ||
 					frm.txt.value.charAt(frm.txt.value.length-1)=="/" ||
 					frm.txt.value.charAt(frm.txt.value.length-1)=="."){
+					frm.txt.value= frm.txt.value.slice(0,frm.txt.value.length-1);
 
-					frm.txt.value= frm.txt.value.slice(0,frm.txt.value.length-1)
 				}
-				if (frm.txt.value.length>=1) 
-				frm.txt.value= frm.txt.value+x;
+				if (frm.txt.value.length>=1) {
+					if (x=="."){
+						if (kt==1){
+						frm.txt.value= frm.txt.value+x;
+						kt=0;
+						console.log(kt);
+						}
+
+					}
+					else{
+						frm.txt.value= frm.txt.value+x;
+						kt=1;
+					}
+				
+				}
 				if (frm.txt.value.length==0){
 					if(x=="+" || x=="-"){
 						frm.txt.value= frm.txt.value+x;

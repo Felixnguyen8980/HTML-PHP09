@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+<style type="text/css">
+	#car{
+		margin-top: 100px;
+		position: absolute;9
+	}
+	
+</style>
+</head>
+<body>
+
+<button id="Left">Left</button>
+<button id="Right">Right</button>
+<p></p>
+
+<img id="car" src="nissan-car.jpg"></img>
+<script> 
+$(document).ready(function(){
+    $("#Right").click(function(){
+        $("#car").animate({left: "450px"});
+        document.getElementById("car").style.transform = "rotateY(0deg)";
+    });
+      $("#Left").click(function(){
+        $("#car").animate({left: "10px"});
+        document.getElementById("car").style.transform = "rotateY(180deg)";
+
+    });
+});
+</script> 
+</body>
+</html>
