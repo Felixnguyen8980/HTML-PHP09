@@ -72,8 +72,7 @@
 	<script type="text/javascript">
 		var kt=1;
 		function dis (x) {
-				console.log(x);
-				console.log(kt);
+				console.log("x=",x);
 			if ((0<=x)&&(x<=9)){
 			frm.txt.value= frm.txt.value+x;
 			}
@@ -89,10 +88,9 @@
 				}
 				if (frm.txt.value.length>=1) {
 					if (x=="."){
+						checkdot();
 						if (kt==1){
 						frm.txt.value= frm.txt.value+x;
-						kt=0;
-						console.log(kt);
 						}
 
 					}
@@ -110,7 +108,32 @@
 			}
 
 		}
+		function checkdot(){
+			var cont=1;
+			var a;
+			var i=frm.txt.value.length-1;
+			while (cont==1&& i>0){
+				a=frm.txt.value.charAt(i);
+				if ((0<=a)&&(9>=a)){
+					console.log("cursor=",i);
+					console.log("charAtCursor=",a);
+					i--;
+				}
+				else{
+					if (a=="."){
+						cont=0;
+						kt=0;
+					}
+					else{
+						cont=0;
+						kt=1;
+					}
+				}
 
+				
+			}
+			console.log("kt=",kt);
+		}
 		//All clear button function CE
 		function ce(){
 			frm.txt.value='';
@@ -118,7 +141,9 @@
 
 		//BackSpace button function
 		function BS(){
-			frm.txt.value=frm.txt.value.slice(0,frm.txt.value.length-1)
+			if (frm.txt.value.slice(0,frm.txt.value.length-1)=="."){
+			}
+			frm.txt.value=frm.txt.value.slice(0,frm.txt.value.length-1);
 		}
 		function eq(){
 			var a=eval(frm.txt.value);
