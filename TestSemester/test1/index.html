@@ -79,52 +79,99 @@
 				  </div>
 			</div>
 			<div id="ApplyProduct">
-				<div class="row">
-					<div class="col-5 img">
-						<img src="img/IncubationContent.png" alt="">
+				<div class="slider1">
+					<div class="row">
+						<div class="col-5 img">
+							<img src="img/IncubationContent.png" alt="">
+						</div>
+						<div class="col-5 content">
+							<h2>Incubating Program</h2>
+							<p>We hand-pick startup from an applocation proces and monitor them from their introduction to our Integratednsive program until their maturation and ultimate graduation</p>
+							<div class="btnApply">
+								 <button>APPLY NOW</button>
+							</div>
+						</div>
 					</div>
-					<div class="col-5 content">
-						<h2>Incubating Program</h2>
-						<p>We hand-pick startup from an applocation proces and monitor them from their introduction to our Integratednsive program until their maturation and ultimate graduation</p>
-						<div class="btnApply">
-							 <button>APPLY NOW</button>
+				</div>
+				<div class="slider1">
+					<div class="row">
+						<div class="col-5 img">
+							<img src="img/startup.png" alt="">
+						</div>
+						<div class="col-5 content">
+							<h2>Startup program</h2>
+							<p>Start Jerusalem is a global competition organized by the Ministry of Foreign Affairs and the Jerusalem Development Authority, which brings...</p>
+							<div class="btnApply">
+								 <button>APPLY NOW</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider1">
+					<div class="row">
+						<div class="col-5 img">
+							<img src="img/Jerusalem.png" alt="">
+						</div>
+						<div class="col-5 content">
+							<h2>Jerusalem</h2>
+							<p>Start Jerusalem is a global competition organized by the Ministry of Foreign Affairs and the Jerusalem Development Authority, which brings...</p>
+							<div class="btnApply">
+								 <button>APPLY NOW</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="News">
 					<h2>News - Events Startup News</h2>
-					<div class="row slider">
+					<div class="row">
 						<div class="col-05">
 							
 						</div>
-						<div class="col-3 content">
-							<div class="img">
-								<img src="img/Jerusalem.png" alt="">
+				
+							<div class="col-3 content slider2">
+								<div class="img">
+									<img src="img/Jerusalem.png" alt="">
+								</div>
+								<div class="message">
+									<h3>Start Jerusalem 2017</h3>
+									<p>Start Jerusalem is a global competition organized by the Ministry of Foreign Affairs and the Jerusalem Development Authority, which brings...</p>
+								</div>
 							</div>
-							<div class="message">
-								<h3>Start Jerusalem 2017</h3>
-								<p>Start Jerusalem is a global competition organized by the Ministry of Foreign Affairs and the Jerusalem Development Authority, which brings...</p>
+					
+				
+							<div class="col-3 content slider2">
+								<div class="img">
+									<img src="IMG/JeffHoffman.png" alt="">
+								</div>
+								<div class="message">
+									<h3>More excited about angels than VCs in Southeast Asia: Serial entrepreneur Jeff Hoffman</h3>
+									<p>The growth in angel investor networks in Southeast Asia is a heartening trend and one that has Jeff Hoffman, serial entrepreneur who used to be with...</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-3 content">
-							<div class="img">
-								<img src="IMG/JeffHoffman.png" alt="">
+				
+			
+							<div class="col-3 content slider2">
+								<div class="img">
+									<img src="img/startup.png" alt="">
+								</div>
+								<div class="message">
+									<h3>Seminar: Start-up -- Legal issues for start-ups</h3>
+									<p>Start Jerusalem is a global competition organized by the Ministry of Foreign Affairs and the Jerusalem Development Authority, which brings...</p>
+								</div>
 							</div>
-							<div class="message">
-								<h3>More excited about angels than VCs in Southeast Asia: Serial entrepreneur Jeff Hoffman</h3>
-								<p>The growth in angel investor networks in Southeast Asia is a heartening trend and one that has Jeff Hoffman, serial entrepreneur who used to be with...</p>
+					
+						
+							<div class="col-3 content slider2">
+								<div class="img">
+									<img src="img/JeffHoffman.png" alt="">
+								</div>
+								<div class="message">
+									<h3>Seminar: Start-up -- Legal issues for start-ups</h3>
+									<p>Start Jerusalem is a global competition organized by the Ministry of Foreign Affairs and the Jerusalem Development Authority, which brings...</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-3 content">
-							<div class="img">
-								<img src="img/startup.png" alt="">
-							</div>
-							<div class="message">
-								<h3>Seminar: Start-up -- Legal issues for start-ups</h3>
-								<p>Start Jerusalem is a global competition organized by the Ministry of Foreign Affairs and the Jerusalem Development Authority, which brings...</p>
-							</div>
-						</div>
+						
 						<div class="col-05 "></div>
 					</div>
 			</div>
@@ -249,5 +296,36 @@
 				</div>
 			</div>
 		</div>
+		<<script>
+			var myIndex =0;
+			slide1();
+
+			var Indexslider2=0;
+			slide2();
+
+			function slide1(){
+				var i;
+				var x = document.getElementsByClassName("slider1");
+				for (i=0; i< x.length ;i++){
+					x[i].style.display ="none";
+				}
+				x[myIndex].style.display="block";
+				myIndex++;
+				if (myIndex >= x.length) {myIndex=0}
+				setTimeout(slide1, 3000); // change every 3seconds
+			}
+
+			function slide2(){
+				var i;
+				var x = document.getElementsByClassName("slider2");
+				for (i=0; i< x.length ;i++){
+					x[i].style.display ="block";
+				}
+				x[Indexslider2].style.display="none";
+				Indexslider2++;
+				if (Indexslider2 >= x.length) {Indexslider2=0}
+				setTimeout(slide2, 3000); // change every 3seconds
+			}
+		</script>
 </body>
 </html>
