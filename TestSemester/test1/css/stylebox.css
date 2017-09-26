@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	min-width: 100%;
+}
+.col-05{
+	width: 5%;
+	max-width: 5%;
+	min-width: 5%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-1{
+	width: 10%;
+	max-width: 10%;
+	min-width: 10%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-2{
+	width: 20%;
+	max-width: 20%;
+	min-width: 20%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-3{
+	width: 30%;
+	max-width: 30%;
+	min-width: 30%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-4{
+	width: 40%;
+	max-width: 40%;
+	min-width: 40%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-5{
+	width: 50%;
+	max-width: 50%;
+	min-width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-6{
+	width: 60%;
+	max-width: 60%;
+	min-width: 60%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-7{
+	width: 70%;
+	max-width: 70%;
+	min-width: 70%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-8{
+	width: 80%;
+	max-width: 80%;
+	min-width: 80%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-9{
+	width: 90%;
+	max-width: 90%;
+	min-width: 90%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-10{
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	padding: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+.row{
+	display: flex;
+}
+.circle{
+	border-radius: 50%;
+}
