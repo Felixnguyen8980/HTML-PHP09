@@ -34,7 +34,9 @@ li{
   box-shadow: 0.2em 0.2em 2em black;
 
 }
-
+#header .box{
+	width: 100%;
+}
 #header .colmid{
 	text-align: center;
 }
@@ -62,6 +64,12 @@ li{
 #header .boxmenu li a{
 	font-size: 1.6em;
 	padding: 0 0.5em;
+}
+#header .boxmenu li:hover{
+	background-color: #1cc568;
+}
+#header .boxmenu li:active{
+	background-color: #1cc568;
 }
 #header .function{
 	text-align: center;
@@ -374,3 +382,49 @@ li{
 	
 }
 /* Footer */
+#header .boxmenu .menuResponsive{
+		display: none;
+	}
+@media screen and (max-width: 778px){
+	body{	
+	}
+	#header{
+		position: absolute;
+		top: 0;
+	}
+	#header .boxmenu .menuResponsive{
+		display: block;
+		cursor: pointer;
+	}
+	#header .boxmenu .menuResponsive{
+		padding:20px 10px 20px 10px;
+	}
+	#header .boxmenu .menuResponsive button{
+		border: none;
+		background-color: white;
+		cursor: pointer;
+	}
+	#header .boxmenu .menuResponsive:hover button{
+		background-color: #1cc568;
+	}
+	#header .boxmenu .menuResponsive:hover{
+		background-color: #1cc568;
+	}
+	#header .boxmenu .menuResponsive:hover{
+		background-color: #1cc568;
+	}
+	#header .menu{
+		display: none;
+	}
+	#header{
+		overflow: visible;
+	}
+	#header li{
+		display: block;
+		background-color: black;
+		text-align: left;
+	}
+	#header li a{
+		color: white;
+	}
+}

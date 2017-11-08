@@ -5,6 +5,8 @@
 	<title>DNES - Homepage</title>
 	<link rel="stylesheet" href="css/stylebox.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 		
@@ -205,11 +207,15 @@
 			</div>
 		</div>
 		<div id="header" class="">
+			<div class="row box">
 			<div class="col-2 logo colmid">
 				<img src="img/DNES_logo.png" alt="">
 			</div>
 			<div class="col-7 boxmenu colmid" >
-				<ul class="menu">
+				<div class="col-1 menuResponsive"  style="height: 100%;" onclick="showmenu()">
+					<button  style="height: 100%;width: 100%;"><img style="height: 100%; width: 100%" src="img/menu.png" alt=""></button>
+				</div>
+				<ul class="menu" id="mainmenu">
 					<li class="item"><a href="#" title="">HOME</a></li>
 					<li class="item"><a href="#" title="">ABOUT US</a></li>
 					<li class="item"><a href="#" title="">INCUBATOR</a></li>
@@ -222,6 +228,7 @@
 			<div class="col-1 function colmid" >
 				<img src="img/search.png" alt="">
 				<img src="img/flag_vi.png" alt="">
+			</div>
 			</div>
 		</div><!-- /header -->
 
@@ -299,7 +306,7 @@
 		<<script>
 			var myIndex =0;
 			slide1();
-
+			var k=0;
 			var Indexslider2=0;
 			slide2();
 
@@ -325,6 +332,13 @@
 				Indexslider2++;
 				if (Indexslider2 >= x.length) {Indexslider2=0}
 				setTimeout(slide2, 3000); // change every 3seconds
+			}
+			function showmenu(){
+				k++;
+				if (k % 2== 0)
+				document.getElementById("mainmenu").style.display="block";
+				else
+					document.getElementById("mainmenu").style.display="none";
 			}
 		</script>
 </body>
